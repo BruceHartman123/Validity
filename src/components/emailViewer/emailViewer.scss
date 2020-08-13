@@ -1,0 +1,50 @@
+.email-viewer {
+  padding: 0 2rem;
+  width: calc(100vw - 4rem);
+  h1 {
+    text-align: center;
+  }
+  .email-table {
+    display: grid;
+    grid-template-columns: 20% 20% auto 20% 100px;
+    grid-gap: 10px;
+    word-break: break-all;
+  }
+  .email-header {
+    padding-bottom: 2px;
+    border-bottom: solid 2px black;
+  }
+  .email-body {
+    padding: 5px 0;
+    border-bottom: solid 1px black;
+  }
+  .operation-icons {
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 24px;
+  }
+  .open-icon {
+    color: green;
+  }
+  .delete-icon {
+    color: red;
+  }
+  .shown-email {
+    position: absolute;
+    background-color: #e6e4e4;
+    top: 2rem;
+    bottom: 2rem;
+    left: 2rem;
+    right: 2rem;
+    border: solid 2px grey;
+    overflow-y: auto;
+    .close-btn {
+      text-align: right;
+      margin-right: 10px;
+      font-size: 28px;
+      color: red;
+      font-family: Arial, Helvetica, sans-serif;
+      cursor: pointer;
+    }
+  }
+}
